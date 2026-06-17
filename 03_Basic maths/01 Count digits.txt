@@ -1,0 +1,26 @@
+Count digits in a number
+
+Problem Statement: Given an integer N, return the number of digits in N.
+
+Examples
+
+Example 1:
+Input:N = 12345
+Output:5
+Explanation:  The number 12345 has 5 digits.
+                        
+Example 2:
+Input:N = 7789              
+Output: 4
+Explanation: The number 7789 has 4 digits.
+
+To count the number of digits in a number, we can use the algorithm created in Extract Digits as now instead of 
+extracting digits we are simply creating a counter to count the number of digits in the number..
+
+Algorithm:
+
+Initialise a counter to store the number of digits.
+While N is greater than 0, execute the following:
+Increment the counter by 1
+Update N by removing its last digit by performing a modulo 10 (%10) operation on it.
+After exiting the while loop, we return the counter as the number of digits.
